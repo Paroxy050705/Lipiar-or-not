@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        Check the year is lipiar or not:--
+    </div>
+   <script>
+    var a;
+    a=Number(prompt("Enter a year:"));
+    document.write("The year is:",a,"<br>");
+    if(a%100==0 && a%400==0){
+        document.write(`The year ${a} is lipiar`);
+    }
+    else if(a%100!=0 && a%4==0){
+        document.write(`The year ${a} is lipiar`);
+    }
+    else{
+        document.write(`The year ${a} is not lipiar`);
+    }
+   </script>
+</body>
+</html>
